@@ -53,7 +53,7 @@ int main() {
 		char KeyB; SpaceShip->SetMove_(true);
 		Sleep(20);
 		asteroid = new Objects;
-		asteroid->SetSize_(1);
+		asteroid->SetSize_(IntRandom_(1,3));
 		char* BodyAsteroid = new char[asteroid->GetSize_()];
 		for (int i{ 0 }; i < asteroid->GetSize_(); i++)
 			BodyAsteroid[i] = 157;
